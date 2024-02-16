@@ -13,8 +13,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
          // Llamar a la función para buscar el personaje
          $resultados = BuscarPersonaje($conexion, $terminoBusqueda);
 
+         $resultados_json = json_encode($resultados);
          // Devolver los resultados al frontend como respuesta
-         echo $resultados;
+         echo $resultados_json;
 
     } else {
         // Manejar otros comandos o acciones aquí, si es necesario
