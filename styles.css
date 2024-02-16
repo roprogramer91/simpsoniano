@@ -1,0 +1,95 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: black;
+    color: yellow;
+}
+
+.bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+}
+
+.logo {
+    width: 3%;
+    
+}
+
+.busqueda {
+width: 20%;
+height: 10%;
+}
+
+.btnBuscar {
+    width: 3%;
+}
+
+/*CONTENEDOR Y ASIDE*/
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* CONTENEDOR DE RESULTADOS */
+.contenedor-resultados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.resultado {
+    padding-top: 5%;
+    width: 50%; 
+    margin-bottom: 20px; 
+    text-align: center; 
+}
+
+.resultado img {
+    width: 50%;
+    height: auto;
+}
+
+.resultado label {
+    display: block;
+    margin-top: 10px; /* Espacio entre la imagen y la etiqueta */
+}
+
+
+/*BARRA LATERAL*/
+
+aside {
+ background-color: black;
+ color: yellow;
+ width: 150rem;
+
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside ul li {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+aside ul li a {
+    padding: 5%;
+    color: yellow;
+    text-decoration: none;
+}
+
+/*FOOTER*/
+footer {
+    background-color: black;
+    color:  yellow;
+    padding: 1%;
+    text-align: center;
+}
