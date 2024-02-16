@@ -10,6 +10,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Obtener el término de búsqueda enviado desde el formulario
         $terminoBusqueda = $_POST["busqueda"];
 
+         // Llamar a la función para buscar el personaje
+         $resultados = BuscarPersonaje($conexion, $terminoBusqueda);
+
+         // Devolver los resultados al frontend como respuesta
+         echo $resultados;
 
     } else {
         // Manejar otros comandos o acciones aquí, si es necesario
